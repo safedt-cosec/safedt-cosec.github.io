@@ -439,6 +439,22 @@ li {
     margin-bottom: 1rem;
 }
 
+#poster_image_container {
+    position: relative; /* Required for absolute positioning inside */
+    height: 75vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    z-index: 10;
+}
+#poster_image {
+    height: 75vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 1rem;
+}
+
 
 
 /* Responsive Design */
@@ -503,6 +519,12 @@ li {
     }
     #news_image {
         height: 20vw;
+    }
+    #poster_image_container {
+        height: 50vw;
+    }
+    #poster_image {
+        height: 50vw;
     }
 }
 
